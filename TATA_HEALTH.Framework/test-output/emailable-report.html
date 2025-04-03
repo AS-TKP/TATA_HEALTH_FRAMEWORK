@@ -8,59 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">103,624</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">31,572</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tataHealth_Smoke_Integreation_System_Test.BookAppointment_AddMediHistory_ST_Test</td><td><a href="#m0">AddMedicalHistory_ST_Test</a></td><td rowspan="1">1743677526196</td><td rowspan="1">49154</td></tr><tr class="failedeven"><td><a href="#m1">BookAnAppointment_ST_Test</a></td><td rowspan="1">1743677575554</td><td rowspan="1">9446</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tataHealth_Smoke_Integreation_System_Test.AddDr_LoginToUPPanel_ST_Test</td><td><a href="#m2">LoginToUser_patientPanel_Test</a></td><td rowspan="1">1743677615193</td><td rowspan="1">2921</td></tr><tr class="passedeven"><td><a href="#m3">addADoctor_Test</a></td><td rowspan="1">1743677618257</td><td rowspan="1">9811</td></tr><tr class="passedodd"><td rowspan="4">tataHealth_Smoke_Integreation_System_Test.TH_Smoke_IT_Test</td><td><a href="#m4">LoginToAdminPanel_Test</a></td><td rowspan="1">1743677586895</td><td rowspan="1">1010</td></tr><tr class="passedodd"><td><a href="#m5">RegisterAPatient_Test</a></td><td rowspan="1">1743677588024</td><td rowspan="1">1669</td></tr><tr class="passedodd"><td><a href="#m6">VerifyContactUsQuery_Test</a></td><td rowspan="1">1743677589783</td><td rowspan="1">22806</td></tr><tr class="passedodd"><td><a href="#m7">VerifyDoctorLogin_Test</a></td><td rowspan="1">1743677612610</td><td rowspan="1">1182</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tataHealth_Smoke_Integreation_System_Test.BookAppointment_AddMediHistory_ST_Test</td><td><a href="#m0">BookAnAppointment_ST_Test</a></td><td rowspan="1">1743684082526</td><td rowspan="1">29276</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">tataHealth_Smoke_Integreation_System_Test.BookAppointment_AddMediHistory_ST_Test#AddMedicalHistory_ST_Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;username&apos;]&quot;}
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fdae256e779bfcaaaad3a28914f97be5, findElement {value=//span[@class=&apos;username&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\anjal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60252/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fdae256e779bfcaaaad3a28914f97be5
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at tataHealth_Smoke_Integreation_System_Test.BookAppointment_AddMediHistory_ST_Test.AddMedicalHistory_ST_Test(BookAppointment_AddMediHistory_ST_Test.java:286)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tataHealth_Smoke_Integreation_System_Test.BookAppointment_AddMediHistory_ST_Test#BookAnAppointment_ST_Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Doctor info added Successfully}
-  (Session info: chrome=134.0.6998.178): Doctor info added Successfully
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fdae256e779bfcaaaad3a28914f97be5, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\anjal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60252/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fdae256e779bfcaaaad3a28914f97be5
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
-	at tata_health_generic_ListenerUtility.ExtentReport_ListImpClass.onTestFailure(ExtentReport_ListImpClass.java:79)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tataHealth_Smoke_Integreation_System_Test.AddDr_LoginToUPPanel_ST_Test#LoginToUser_patientPanel_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tataHealth_Smoke_Integreation_System_Test.AddDr_LoginToUPPanel_ST_Test#addADoctor_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tataHealth_Smoke_Integreation_System_Test.TH_Smoke_IT_Test#LoginToAdminPanel_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tataHealth_Smoke_Integreation_System_Test.TH_Smoke_IT_Test#RegisterAPatient_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tataHealth_Smoke_Integreation_System_Test.TH_Smoke_IT_Test#VerifyContactUsQuery_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tataHealth_Smoke_Integreation_System_Test.TH_Smoke_IT_Test#VerifyDoctorLogin_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">tataHealth_Smoke_Integreation_System_Test.BookAppointment_AddMediHistory_ST_Test#BookAnAppointment_ST_Test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

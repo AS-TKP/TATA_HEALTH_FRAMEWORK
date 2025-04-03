@@ -19,12 +19,13 @@ import tata_health_ObjectRepository.POM.DoctorLoginPage;
 import tata_health_ObjectRepository.POM.HomePage;
 import tata_health_ObjectRepository.POM.Patient_UserSignUpPage;
 import tata_health_generic_BaseUtility.BaseClassTest;
+import tata_health_generic_ListenerUtility.Retry;
 
 public class TH_Smoke_IT_Test extends BaseClassTest {
 
 	/* 1===> Smoke Test - Login to Admin Panel */
 
-	@Test(groups = "SmokeTest")
+	@Test(groups = "SmokeTest", retryAnalyzer = Retry.class)
 	public void LoginToAdminPanel_Test() throws Throwable {
 		String URL = pflib.getDatafromPropertiesFile("url");
 		String USERNAME = pflib.getDatafromPropertiesFile("username");
@@ -35,12 +36,12 @@ public class TH_Smoke_IT_Test extends BaseClassTest {
 		// logout as admin 
 		driver.findElement(By.xpath("//span[@class='username']")).click();
 		driver.findElement(By.xpath("//a[@href='logout.php']")).click();
-		System.out.println("LoginToAdminPanel_Test====>Passed");
+		System.out.println("1.....Smoke TC....-LoginToAdminPanel_Test====>Passed");
 	}
 //=======================================================================================================//
 	/* 2===> Smoke Test - Register a Patient */
 
-	@Test(groups = "SmokeTest")
+	@Test(groups = "SmokeTest", retryAnalyzer = Retry.class)
 	public void RegisterAPatient_Test() throws Throwable {
 
 		String SignUpUrl = elib.getDataFromExcel("User", 1, 0);
@@ -55,13 +56,13 @@ public class TH_Smoke_IT_Test extends BaseClassTest {
 
 		Patient_UserSignUpPage pusp = new Patient_UserSignUpPage(driver);
 		pusp.Patient_UserSignUpForFemale(SignUpUrl, FullName, Address, City, Email, Password);
-		System.out.println("RegisterAPatient_Test====>Passed");
+		System.out.println("2.....Smoke TC....-RegisterAPatient_Test====>Passed");
 
 	}
 //=====================================================================================================//
 	/* 3===> Integration Test - To verify contact us queries */
 	
-	@Test(groups = "IntegrationTest")
+	@Test(groups = "IntegrationTest",retryAnalyzer = Retry.class)
 	public void VerifyContactUsQuery_Test() throws Throwable {
 		waitForPageToLoad(driver);
 		String ContactUsUrl = elib.getDataFromExcel("ContactUs", 1, 0);
@@ -110,13 +111,13 @@ public class TH_Smoke_IT_Test extends BaseClassTest {
 // logout as admin 
 	driver.findElement(By.xpath("//span[@class='username']")).click();
 	driver.findElement(By.xpath("//a[@href='logout.php']")).click();
-	System.out.println("VerifyContactUsQuery_Test===>Passed");
+	System.out.println("3..... Integration TC....-VerifyContactUsQuery_Test===>Passed");
 	}
 //=====================================================================================================//
 
 	/* 4===> Integration Test - To verify Doctor login */
 	
-	@Test(groups = "IntegrationTest")
+	@Test(groups = "IntegrationTest", retryAnalyzer = Retry.class)
 	public void VerifyDoctorLogin_Test() throws Throwable {
 		
 		String URL = elib.getDataFromExcel("Doctor", 1, 0);
@@ -136,6 +137,6 @@ public class TH_Smoke_IT_Test extends BaseClassTest {
 		//logout
 		driver.findElement(By.xpath("//span[@class='username']")).click();
 		driver.findElement(By.xpath("//a[@href='logout.php']")).click();
-		System.out.println("VerifyDoctorLogin_Test===>Passed");
+		System.out.println("4......Integration TC....-VerifyDoctorLogin_Test===>Passed");
 	}
 }

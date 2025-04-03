@@ -18,12 +18,13 @@ import tata_health_ObjectRepository.POM.Patient_UserDashboardPage;
 import tata_health_ObjectRepository.POM.Patient_UserLoginPage;
 import tata_health_ObjectRepository.POM.Patient_UserSignUpPage;
 import tata_health_generic_BaseUtility.BaseClassTest;
+import tata_health_generic_ListenerUtility.Retry;
 
 public class AddDr_LoginToUPPanel_ST_Test extends BaseClassTest {
 
 	/* 1===> System Test - Add a doctor */
 
-	@Test(groups = "SystemTest")
+	@Test(groups = "SystemTest", retryAnalyzer = Retry.class)
 	public void addADoctor_Test() throws Throwable {
 		/* login to admin panel */
 		String URL = pflib.getDatafromPropertiesFile("url");
@@ -82,11 +83,12 @@ public class AddDr_LoginToUPPanel_ST_Test extends BaseClassTest {
 		/* logout */
 		driver.findElement(By.xpath("//span[@class='username']")).click();
 		driver.findElement(By.xpath("//a[@href='logout.php']")).click();
+		System.out.println("4......System TC.....- addADoctor_Test====> Passed");
 	}
 
 	/* 2 ===> System Test - Login To User_patient Panel */
 
-	@Test(groups = "SystemTest")
+	@Test(groups = "SystemTest", retryAnalyzer = Retry.class)
 	public void LoginToUser_patientPanel_Test() throws Throwable {
 
 		String SignUpUrl = elib.getDataFromExcel("User", 1, 0);
@@ -119,6 +121,8 @@ public class AddDr_LoginToUPPanel_ST_Test extends BaseClassTest {
 		/* logout */
 		driver.findElement(By.xpath("//span[@class='username']")).click();
 		driver.findElement(By.xpath("//a[@href='logout.php']")).click();
+		System.out.println("4......System TC....- LoginToUser_patientPanel_Test====> Passed");
+
 	}
 	
 }

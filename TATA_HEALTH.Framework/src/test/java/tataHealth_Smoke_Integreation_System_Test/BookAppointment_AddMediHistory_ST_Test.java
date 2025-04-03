@@ -22,10 +22,11 @@ import tata_health_ObjectRepository.POM.Patient_UserDashboardPage;
 import tata_health_ObjectRepository.POM.Patient_UserLoginPage;
 import tata_health_ObjectRepository.POM.Patient_UserSignUpPage;
 import tata_health_generic_BaseUtility.BaseClassTest;
+import tata_health_generic_ListenerUtility.Retry;
 
 public class BookAppointment_AddMediHistory_ST_Test extends BaseClassTest {
 
-	@Test(groups = "SystemTest")
+	@Test(groups = "SystemTest",retryAnalyzer = Retry.class)
 	public void BookAnAppointment_ST_Test() throws Throwable {
 // 1. login as admin
 		String URL = pflib.getDatafromPropertiesFile("url");
@@ -131,11 +132,12 @@ public class BookAppointment_AddMediHistory_ST_Test extends BaseClassTest {
 		/* logout */
 		driver.findElement(By.xpath("//span[@class='username']")).click();
 		driver.findElement(By.xpath("//a[@href='logout.php']")).click();
+		System.out.println("7.....System TC....-BookAnAppointment_ST_Test===> Passed");
 	}
 	
 //============================================================================================================//
 
-	@Test(groups = "SystemTest")
+	@Test(groups = "SystemTest", retryAnalyzer = Retry.class)
 	public void AddMedicalHistory_ST_Test() throws Throwable {
 // 1. login as admin
 		String URL = pflib.getDatafromPropertiesFile("url");
@@ -298,6 +300,8 @@ public class BookAppointment_AddMediHistory_ST_Test extends BaseClassTest {
 		// 17. logout as user
 		driver.findElement(By.xpath("//span[@class='username']")).click();
 		driver.findElement(By.xpath("//a[@href='logout.php']")).click();
+		System.out.println("8.....System TC....-AddMedicalHistory_ST_Test===> Passed");
+
 	}
 	
 }
