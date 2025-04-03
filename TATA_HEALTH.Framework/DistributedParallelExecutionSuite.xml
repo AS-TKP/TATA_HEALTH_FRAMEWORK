@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Suite">
+   
+   <test name = "Test-1">
+    <classes>
+      <class name="tataHealth_Smoke_Integreation_System_Test.BookAppointment_AddMediHistory_ST_Test"/>
+      </classes>
+      </test>
+      
+      <test name= "Test-2">
+      <classes>
+      <class name="tataHealth_Smoke_Integreation_System_Test.TH_Smoke_IT_Test"/>
+      </classes>
+      </test>
+      
+      <test name = "Test-3">
+      <classes>
+      <class name="tataHealth_Smoke_Integreation_System_Test.AddDr_LoginToUPPanel_ST_Test"/>
+    </classes> 
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

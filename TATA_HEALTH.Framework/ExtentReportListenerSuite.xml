@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="tata_health_generic_ListenerUtility.ExtentReport_ListImpClass"/>
+</listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="tataHealth_Smoke_Integreation_System_Test.BookAppointment_AddMediHistory_ST_Test"/>
+      <class name="tataHealth_Smoke_Integreation_System_Test.TH_Smoke_IT_Test"/>
+      <class name="tataHealth_Smoke_Integreation_System_Test.AddDr_LoginToUPPanel_ST_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
